@@ -1,0 +1,3 @@
+this is the content to be written in the file
+class
+name

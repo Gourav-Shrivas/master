@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false" thread-count="2">
+
+ <test name="Test">
+ <packages>
+ <package name="scripts"/>
+ </packages>
+    <groups>	
+				<run>	
+   					 <include name="english" />	
+   					  <include name="deutch" />	
+        		</run>	
+    </groups>
+    <!--   <classes>
+     <class name="scripts.WikipediaTest2"/>
+     <class name="scripts.WikipediaTest3"/>
+     </classes>	-->
+     </test>  
+</suite> <!-- Suite -->

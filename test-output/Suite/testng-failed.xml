@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <groups>
+      <run>
+        <include name="english"/>
+        <include name="deutch"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="scripts.WikipediaTest3">
+        <methods>
+          <include name="searchBoxTest"/>
+          <include name="openUrlTest"/>
+          <include name="searchbuttonTest"/>
+          <include name="selectDeutschLink"/>
+        </methods>
+      </class> <!-- scripts.WikipediaTest3 -->
+      <class name="scripts.WikipediaTest2">
+        <methods>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- scripts.WikipediaTest2 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
