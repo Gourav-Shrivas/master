@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="321986" started-at="2020-01-26T08:46:24Z" finished-at="2020-01-26T08:51:46Z">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="321986" started-at="2020-01-26T08:46:24Z" finished-at="2020-01-26T08:51:46Z">
+      <class name="testClasses.PurchaseTest">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:testClasses.PurchaseTest@7cd62f43]" name="init" is-config="true" duration-ms="14119" started-at="2020-01-26T14:16:24Z" finished-at="2020-01-26T14:16:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="selectProductcategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testClasses.PurchaseTest@7cd62f43]" name="selectProductcategory" duration-ms="113931" started-at="2020-01-26T14:16:41Z" data-provider="provideDataFromExcel" finished-at="2020-01-26T14:18:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-list.php?Apparel-pg1-cid35.html]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Pure_cotton_T-Shirt-pid47.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Pure_cotton_T-Shirt-pid47.html]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[93']]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[386']]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[390']]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1']]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Pure cotton T-Shirt]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[one]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductcategory -->
+        <test-method status="PASS" signature="selectProductcategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testClasses.PurchaseTest@7cd62f43]" name="selectProductcategory" duration-ms="54401" started-at="2020-01-26T14:18:35Z" data-provider="provideDataFromExcel" finished-at="2020-01-26T14:19:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-list.php?Computers-pg1-cid8.html]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-list.php?Desktops-pg1-cid21.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Dell_Inspiron_Slim_Desktop-pid18.html]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[383']]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[387']]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[391']]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1']]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Dell Inspiron Slim Desktop]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[two]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductcategory -->
+        <test-method status="PASS" signature="selectProductcategory(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testClasses.PurchaseTest@7cd62f43]" name="selectProductcategory" duration-ms="137221" started-at="2020-01-26T14:19:29Z" data-provider="provideDataFromExcel" finished-at="2020-01-26T14:21:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-list.php?Digital_Distribution-pg1-cid12.html]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Avactis_Shopping_Cart_Web_Manual_-_Downloadable_products-pid33.html]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://localhost/Avactis/product-info.php?Avactis_Shopping_Cart_Web_Manual_-_Downloadable_products-pid33.html]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[93']]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[386']]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[390']]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1']]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Avactis Shopping Cart Web Manual]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[three]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductcategory -->
+      </class> <!-- testClasses.PurchaseTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
