@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="33938" started-at="2019-08-03T06:49:55Z" finished-at="2019-08-03T06:50:29Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="33938" started-at="2019-08-03T06:49:55Z" finished-at="2019-08-03T06:50:29Z">
+      <class name="com.practise.framework.CSVLearning">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.practise.framework.CSVLearning@614c5515]" name="init" is-config="true" duration-ms="33778" started-at="2019-08-03T12:19:55Z" finished-at="2019-08-03T12:20:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="provide_username_password(java.lang.String, java.lang.String)[pri:0, instance:com.practise.framework.CSVLearning@614c5515]" name="provide_username_password" duration-ms="68" started-at="2019-08-03T12:20:29Z" data-provider="provideDataFromCsv" finished-at="2019-08-03T12:20:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DMHPSTNY9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jun@2019]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provide_username_password -->
+        <test-method status="PASS" signature="provide_username_password(java.lang.String, java.lang.String)[pri:0, instance:com.practise.framework.CSVLearning@614c5515]" name="provide_username_password" duration-ms="40" started-at="2019-08-03T12:20:29Z" data-provider="provideDataFromCsv" finished-at="2019-08-03T12:20:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DMHTRTRE]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jul@2019]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provide_username_password -->
+        <test-method status="PASS" signature="provide_username_password(java.lang.String, java.lang.String)[pri:0, instance:com.practise.framework.CSVLearning@614c5515]" name="provide_username_password" duration-ms="32" started-at="2019-08-03T12:20:29Z" data-provider="provideDataFromCsv" finished-at="2019-08-03T12:20:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DMHTRETT]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jul@2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provide_username_password -->
+      </class> <!-- com.practise.framework.CSVLearning -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

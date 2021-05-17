@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="79876" started-at="2021-04-28T12:16:11Z" finished-at="2021-04-28T12:17:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="79876" started-at="2021-04-28T12:16:11Z" finished-at="2021-04-28T12:17:31Z">
+      <class name="com.practise.framework.CapsLetter">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.practise.framework.CapsLetter@8bd1b6a]" name="init" is-config="true" duration-ms="58206" started-at="2021-04-28T17:46:11Z" finished-at="2021-04-28T17:47:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="getURL()[pri:0, instance:com.practise.framework.CapsLetter@8bd1b6a]" name="getURL" duration-ms="21651" started-at="2021-04-28T17:47:09Z" finished-at="2021-04-28T17:47:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getURL -->
+      </class> <!-- com.practise.framework.CapsLetter -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
