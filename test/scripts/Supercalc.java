@@ -1,6 +1,10 @@
 package scripts;
 
 public class Supercalc extends AbstractCalc {
+	
+	void addition(int b) {
+		
+	}
 
 	@Override
 	void substraction() {
@@ -13,6 +17,8 @@ public class Supercalc extends AbstractCalc {
 		// TODO Auto-generated method stub
 		
 	}
+
+	}
    
 
-}
+

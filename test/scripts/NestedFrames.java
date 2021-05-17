@@ -21,7 +21,7 @@ public class NestedFrames {
 	
   @BeforeClass
   public void openBrowser() {
-	  System.setProperty("webdriver.chrome.driver", "test\\resources\\resources\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver\\chromedriver.exe");
 	  driver=new ChromeDriver();
      driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
      
@@ -66,18 +66,18 @@ public class NestedFrames {
   public void switchMiddleframe() {
 	 driver.switchTo().parentFrame();
 	
-	  List<WebElement> list=driver.findElements(By.tagName("frame"));
-	  System.out.println("list size is "+list.size());
-	  driver.switchTo().frame(list.get(1));
+//	  List<WebElement> list=driver.findElements(By.tagName("frame"));
+//	  System.out.println("list size is "+list.size());
+	  driver.switchTo().frame(list2.get(1));
 	  WebElement Middleframebody=driver.findElement(By.xpath("/html/body"));
 	  Assert.assertEquals(Middleframebody.getText(), "MIDDLE");
   }
   @Test(priority=6)
   public void switchRightframe() {
 	  driver.switchTo().parentFrame();
-	  List<WebElement> list=driver.findElements(By.tagName("frame"));
-	  System.out.println("list size is "+list.size());
-	  driver.switchTo().frame(list.get(2));
+//	  List<WebElement> list=driver.findElements(By.tagName("frame"));
+//	  System.out.println("list size is "+list.size());
+	  driver.switchTo().frame(list2.get(2));
 	  WebElement Rightframebody=driver.findElement(By.xpath("/html/body"));
 	  Assert.assertEquals(Rightframebody.getText(), "RIGHT");
   }

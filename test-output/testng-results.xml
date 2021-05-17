@@ -1,73 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="14" passed="14">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41599" started-at="2019-07-27T18:55:21Z" finished-at="2019-07-27T18:56:03Z">
+  <suite name="Default suite" duration-ms="33995" started-at="2021-04-16T10:14:49Z" finished-at="2021-04-16T10:15:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="41599" started-at="2019-07-27T18:55:21Z" finished-at="2019-07-27T18:56:03Z">
-      <class name="scripts.ChocolateAssignment">
-        <test-method status="PASS" signature="prerequisites()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="prerequisites" is-config="true" duration-ms="6386" started-at="2019-07-28T00:25:21Z" finished-at="2019-07-28T00:25:27Z">
+    <test name="Default test" duration-ms="33995" started-at="2021-04-16T10:14:49Z" finished-at="2021-04-16T10:15:23Z">
+      <class name="scripts.Sortingdropdown">
+        <test-method status="PASS" signature="initelements()[pri:0, instance:scripts.Sortingdropdown@32d992b2]" name="initelements" is-config="true" duration-ms="28398" started-at="2021-04-16T15:44:49Z" finished-at="2021-04-16T15:45:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- prerequisites -->
-        <test-method status="PASS" signature="getUrl()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="getUrl" duration-ms="4513" started-at="2019-07-28T00:25:27Z" finished-at="2019-07-28T00:25:32Z">
+        </test-method> <!-- initelements -->
+        <test-method status="PASS" signature="testSortdropdown()[pri:0, instance:scripts.Sortingdropdown@32d992b2]" name="testSortdropdown" duration-ms="5567" started-at="2021-04-16T15:45:17Z" finished-at="2021-04-16T15:45:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUrl -->
-        <test-method status="PASS" signature="clickAlertbox()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="clickAlertbox" duration-ms="193" started-at="2019-07-28T00:25:32Z" depends-on-methods="scripts.ChocolateAssignment.getUrl" finished-at="2019-07-28T00:25:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickAlertbox -->
-        <test-method status="PASS" signature="clickStartyourtrip()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="clickStartyourtrip" duration-ms="5679" started-at="2019-07-28T00:25:32Z" depends-on-methods="scripts.ChocolateAssignment.clickAlertbox" finished-at="2019-07-28T00:25:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickStartyourtrip -->
-        <test-method status="PASS" signature="searchTexas()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="searchTexas" duration-ms="982" started-at="2019-07-28T00:25:38Z" depends-on-methods="scripts.ChocolateAssignment.clickStartyourtrip" finished-at="2019-07-28T00:25:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTexas -->
-        <test-method status="PASS" signature="clickHouston()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="clickHouston" duration-ms="3072" started-at="2019-07-28T00:25:39Z" depends-on-methods="scripts.ChocolateAssignment.searchTexas" finished-at="2019-07-28T00:25:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickHouston -->
-        <test-method status="PASS" signature="skiptoTransportation()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="skiptoTransportation" duration-ms="1021" started-at="2019-07-28T00:25:42Z" depends-on-methods="scripts.ChocolateAssignment.clickHouston" finished-at="2019-07-28T00:25:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skiptoTransportation -->
-        <test-method status="PASS" signature="skiptoAccomodation()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="skiptoAccomodation" duration-ms="3096" started-at="2019-07-28T00:25:43Z" depends-on-methods="scripts.ChocolateAssignment.skiptoTransportation" finished-at="2019-07-28T00:25:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skiptoAccomodation -->
-        <test-method status="PASS" signature="skiptoBindle()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="skiptoBindle" duration-ms="2427" started-at="2019-07-28T00:25:46Z" depends-on-methods="scripts.ChocolateAssignment.skiptoAccomodation" finished-at="2019-07-28T00:25:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- skiptoBindle -->
-        <test-method status="PASS" signature="houstonZooaddtobindle()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="houstonZooaddtobindle" duration-ms="1369" started-at="2019-07-28T00:25:48Z" depends-on-methods="scripts.ChocolateAssignment.skiptoBindle" finished-at="2019-07-28T00:25:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- houstonZooaddtobindle -->
-        <test-method status="PASS" signature="clickAddtoBindle()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="clickAddtoBindle" duration-ms="968" started-at="2019-07-28T00:25:50Z" depends-on-methods="scripts.ChocolateAssignment.houstonZooaddtobindle" finished-at="2019-07-28T00:25:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickAddtoBindle -->
-        <test-method status="PASS" signature="clickTripOverview()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="clickTripOverview" duration-ms="1387" started-at="2019-07-28T00:25:51Z" depends-on-methods="scripts.ChocolateAssignment.clickAddtoBindle" finished-at="2019-07-28T00:25:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickTripOverview -->
-        <test-method status="PASS" signature="clickEditableView()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="clickEditableView" duration-ms="3404" started-at="2019-07-28T00:25:52Z" depends-on-methods="scripts.ChocolateAssignment.clickTripOverview" finished-at="2019-07-28T00:25:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickEditableView -->
-        <test-method status="PASS" signature="draganddrop()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="draganddrop" duration-ms="1672" started-at="2019-07-28T00:25:56Z" depends-on-methods="scripts.ChocolateAssignment.clickEditableView" finished-at="2019-07-28T00:25:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- draganddrop -->
-        <test-method status="PASS" signature="saveandfinish()[pri:0, instance:scripts.ChocolateAssignment@215be6bb]" name="saveandfinish" duration-ms="5370" started-at="2019-07-28T00:25:57Z" depends-on-methods="scripts.ChocolateAssignment.draganddrop" finished-at="2019-07-28T00:26:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- saveandfinish -->
-      </class> <!-- scripts.ChocolateAssignment -->
+        </test-method> <!-- testSortdropdown -->
+      </class> <!-- scripts.Sortingdropdown -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

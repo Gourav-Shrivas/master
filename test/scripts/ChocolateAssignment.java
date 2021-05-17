@@ -4,11 +4,14 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
@@ -22,7 +25,7 @@ public class ChocolateAssignment {
 	
   @BeforeClass
   public void prerequisites() {
-	  System.setProperty("webdriver.chrome.driver", "test\\resources\\resources\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver\\chromedriver.exe");
 	  driver=new ChromeDriver();
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
@@ -36,15 +39,15 @@ public class ChocolateAssignment {
 	  Assert.assertEquals(driver.getTitle(), "Vacation Planner | Vacation Planning Website: TripHobo");
   }
   
-  @Test(dependsOnMethods="getUrl")
+  @Test(enabled=false)
   public void clickAlertbox() {
 	 WebElement Alertbutton= driver.findElement(By.xpath("//button[contains(text(),'Later')]"));
 	 Alertbutton.click();
   }
   
-  @Test(dependsOnMethods="clickAlertbox")
+  @Test(dependsOnMethods="getUrl")
   public void clickStartyourtrip() {
-	  WebElement starttrip=driver.findElement(By.xpath("//a[contains(text(),'Start Your Trip')]"));
+	  WebElement starttrip=driver.findElement(By.xpath("//a[contains(text(),'Plan Your Next Vacation')]"));
 	  starttrip.click();
 	  Assert.assertEquals(driver.getTitle(), "Travel Guide & Travel Information, Travel Advice, Reviews for: TripHobo");
   }
@@ -115,17 +118,17 @@ public class ChocolateAssignment {
   public void clickEditableView() throws InterruptedException {
 	     WebElement Overview=driver.findElement(By.xpath("//li[@class='view-tab overview active']/span"));
 		 Overview.click();
-		 wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//span[contains(text(),'Lunch time')]"), 2));
+		 wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//span[contains(text(),'Lunch time')]"), 3));
 		 WebElement editableview=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Editable view')]")));
 		 editableview.click();
+		
 	 
   }
   @Test(dependsOnMethods="clickEditableView")
   public void draganddrop() throws InterruptedException {
-//      Thread.sleep(10000);
-	  
-      WebElement target=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table//td[@class='fc-axis']/following-sibling::*[3]//*[1][@class='fc-time-grid-event fc-v-event fc-event fc-start fc-end event-custom-hotel fc-draggable']//div[@class='fc-bg']")));
-	  WebElement source=wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//table//td[@class='fc-axis']/following-sibling::*[2]//*[2][@class='fc-time-grid-event fc-v-event fc-event fc-start fc-end event-place fc-draggable fc-resizable']//div[@class='fc-bg']")));
+      Thread.sleep(10000);
+      WebElement target=driver.findElement(By.xpath("//table//td[@class='fc-axis']/following-sibling::*[3]//*[1][@class='fc-time-grid-event fc-v-event fc-event fc-start fc-end event-custom-hotel fc-draggable']//div[@class='fc-bg']"));
+	  WebElement source=driver.findElement(By.xpath("//table//td[@class='fc-axis']/following-sibling::*[2]//*[2][@class='fc-time-grid-event fc-v-event fc-event fc-start fc-end event-place fc-draggable fc-resizable']//div[@class='fc-bg']"));
 	  wait.until(ExpectedConditions.numberOfElementsToBe(By.xpath("//div[@class='fc-bg']"), 34));
 	  js.executeScript("window.scrollBy(0,-200)");
 	  builder.dragAndDrop(source, target).build().perform();

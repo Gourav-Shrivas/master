@@ -3,25 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="scripts.ChocolateAssignment">
+      <class name="scripts.NestedFrames">
         <methods>
-          <include name="houstonZooaddtobindle"/>
-          <include name="searchTexas"/>
-          <include name="clickStartyourtrip"/>
-          <include name="clickEditableView"/>
-          <include name="draganddrop"/>
-          <include name="clickTripOverview"/>
-          <include name="skiptoBindle"/>
-          <include name="saveandfinish"/>
-          <include name="clickAlertbox"/>
-          <include name="clickAddtoBindle"/>
-          <include name="clickHouston"/>
-          <include name="skiptoAccomodation"/>
-          <include name="skiptoTransportation"/>
+          <include name="switchtobottomframe"/>
+          <include name="clickNestedFrames"/>
+          <include name="openBrowser"/>
+          <include name="switchMiddleframe"/>
+          <include name="switchleftframe"/>
           <include name="getUrl"/>
-          <include name="prerequisites"/>
+          <include name="switchRightframe"/>
         </methods>
-      </class> <!-- scripts.ChocolateAssignment -->
+      </class> <!-- scripts.NestedFrames -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,7 +20,7 @@ public class TablePagination {
 	
   @BeforeClass
   public void prerequisites() {
-	  System.setProperty("webdriver.chrome.driver", "test\\resources\\resources\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\Downloads\\ChromeDriver76\\chromedriver.exe");
 	  driver=new ChromeDriver();
 	  driver.manage().window().maximize();
   }
@@ -30,6 +30,7 @@ public class TablePagination {
 	  driver.get("https://www.seleniumeasy.com/test/table-pagination-demo.html");
 	  String ActualTitle=driver.getTitle();
 	  Assert.assertEquals(ActualTitle, "Selenium Easy - Table with Pagination Demo");
+	 
 	  
   }
   
@@ -41,7 +42,7 @@ public class TablePagination {
 		Assert.assertEquals(rowcount, 13);
 	  }
   
-  @Test(dependsOnMethods="openUrl",priority=3)
+  @Test(priority=3)
   public void printpage1contents() {
 	  for(i=0;i<rowcount;i++) {
 		  WebElement row=rows.get(i);

@@ -3,10 +3,12 @@ package scripts;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -49,8 +51,15 @@ public class AnnaUniversity {
 	  WebElement Research=driver.findElement(By.xpath("//a[contains(text(),'Research Themes')]"));
 	  WebElement Coastalpollution=driver.findElement(By.xpath("//div[@id='menuItemHilite13']"));
 	  builder.moveToElement(Research).moveToElement(Coastalpollution).click().build().perform();
+//	  builder.sendKeys(Keys.TAB);
+//	  builder.sendKeys(Coastalpollution, Keys.F5);
 	  Assert.assertEquals(driver.getTitle(), ":: IOM - Institute For Ocean Management - Anna University ::");
   }
   
-  
+  @AfterClass
+  public void tearDown()
+  {
+	  if(driver!=null)
+		  driver.quit();
+  }
 }

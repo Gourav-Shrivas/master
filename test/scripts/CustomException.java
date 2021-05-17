@@ -15,7 +15,7 @@ public class CustomException extends Exception {
 		}
 		String str=new String("hello");
 		str.concat("man");
-		StringBuilder s=new StringBuilder("Hello");
+		StringBuffer s=new StringBuffer("Hello");
 		s.append("man");
 	System.out.println(str);
 		System.out.println(s);

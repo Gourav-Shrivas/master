@@ -21,7 +21,7 @@ public class WebTable {
 	
   @BeforeClass
   public void prerequisites() {
-	  System.setProperty("webdriver.chrome.driver", "test\\resources\\resources\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver\\chromedriver.exe");
 	  driver=new ChromeDriver();
   }
   

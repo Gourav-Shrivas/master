@@ -15,6 +15,7 @@ public class CookBookTest {
 	Select select;
 	Select select1;
 	WebDriver driver;
+	Select selct=new Select(null);
   @Test(priority=1)
   public void openBrowserTest() {
 	  System.setProperty("webdriver.chrome.driver", "test\\resources\\resources\\chromedriver.exe");
@@ -40,6 +41,8 @@ public class CookBookTest {
 	  select=new Select(driver.findElement(By.name("make")));
 	 int size= select.getOptions().size();
 	 Assert.assertEquals(size, 4);
+	
+  
 	  
   }
   @Test(priority=5)
@@ -138,6 +141,7 @@ public class CookBookTest {
   public void multidropdownSizeTest() {
 	  select1=new Select(driver.findElement(By.xpath("//select[@multiple='multiple']")));
 	 int size= select1.getOptions().size();
+	 Assert.assertTrue( select1.isMultiple());
 	 Assert.assertEquals(size, 5);
   }
   @Test(priority=19)

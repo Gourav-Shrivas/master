@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 public class MultipleSelect {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "test\\resources\\resources\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
         driver.get("http://cookbook.seleniumacademy.com/Config.html");
        WebElement e= driver.findElement(By.xpath("//select[@multiple='multiple']"));
@@ -20,6 +20,7 @@ public class MultipleSelect {
        for(WebElement E:dropdown) {
     	   System.out.println(E.getText());
        }
+           System.out.println(select.isMultiple());
 	}
 
 }

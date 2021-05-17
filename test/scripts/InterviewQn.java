@@ -2,6 +2,7 @@ package scripts;
 
 public class InterviewQn {
 	
+	
 	public void addition(int a,int b) {
 		System.out.println("int");
 	}
@@ -11,6 +12,6 @@ public class InterviewQn {
 	
 	public static void main(String[] args) {
 		InterviewQn obk=new InterviewQn();
-		obk.addition(10, 10);
+		obk.addition(10.0, 10);
 	}
 }

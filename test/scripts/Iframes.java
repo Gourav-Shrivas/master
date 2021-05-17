@@ -1,5 +1,9 @@
 package scripts;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -37,6 +41,8 @@ public class Iframes {
 	@Test(dependsOnMethods="switchtoiframe1")
 	public void switchtoiframe2() {
 		driver.switchTo().parentFrame();
+//		Set<String> sets=driver.getWindowHandles();
+//		List<String> list=new ArrayLis
 		 Iframe2=driver.findElement(By.name("iframe2"));
 		driver.switchTo().frame(Iframe2);
 		WebElement element=driver.findElement(By.xpath("//a[contains(text(),'Datepicker')]"));

@@ -26,7 +26,7 @@ public class Assignment2  {
 		Thread.sleep(10000);
      	driver.findElement(By.xpath("//span[@class='RveJvd snByac']")).click();
      	Thread.sleep(5000);
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Jun@1993#");
+        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Theboys@13");
         Thread.sleep(5000);
         driver.findElement(By.xpath("//span[contains(text(),'Next')]")).click();
         Thread.sleep(10000);

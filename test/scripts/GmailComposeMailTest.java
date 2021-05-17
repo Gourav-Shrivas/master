@@ -43,7 +43,7 @@ public class GmailComposeMailTest {
 	  WebElement Nextbutton=driver.findElement(By.xpath("//span[@class='RveJvd snByac']"));
 	  builder=new Actions(driver);
 	  builder.click(Nextbutton).perform();
-	  //Assert.assertTrue(Nextbutton.isEnabled());
+	  //Assert.assertTrue(Nextbutton.isSelected());
 	  
   }
   @Test(priority=5)

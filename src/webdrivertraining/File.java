@@ -19,7 +19,7 @@ public static void main(String[] args) throws FileNotFoundException{
 		while((s=reader.readLine())!=null)
 			System.out.println(s);
 	}
-	catch(Exception e) {
+	catch(Throwable e) {
 	e.printStackTrace();
 		 }
 	

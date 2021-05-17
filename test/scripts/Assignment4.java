@@ -11,15 +11,20 @@ import org.openqa.selenium.support.ui.Select;
 
 
 public class Assignment4 {
+	
+	
 
 	public static void main(String[] args) {
 		int count = 0;
-		System.setProperty("webdriver.chrome.driver", "test\\resources\\resources\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://cookbook.seleniumacademy.com/Config.html");
+		driver.manage().window().maximize();
 		WebElement dropdown=driver.findElement(By.name("make"));
+		
 		Select select=new Select(dropdown);
 		List<WebElement> list=select.getOptions();
+		//retreive all the dropdown elements and store them in actual list
 		System.out.println(list.size());
 		
 		
